@@ -1,0 +1,60 @@
+# Ignore model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+Checkpoints/
+weights/
+
+# Ignore generated images and metrics
+generated_images/
+metrics/*.png
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Ignore embedded repository
+code/steerers/
+
+# Ignore embedded repository
+code/sdxl-unbox/
+
+# Large data directories (use DVC or HuggingFace Hub instead)
+datasets/
+activations/
+
+# Model directory (weights extensions already covered, but catches edge cases)
+models/
+
+# Scratch / unnamed notebooks
+Untitled*.ipynb
+Untitled*.py
+
+# Large binary data formats
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.parquet
+*.arrow
+
+# Experiment logs and outputs
+*.log
+logs/
+outputs/
+runs/
+wandb/
+mlruns/
+
+# Environment / secrets
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
